@@ -86,13 +86,25 @@ class ViewController: UIViewController {
         activityIndicator.alpha = 0
         activityIndicator.stopAnimating()
     }
+    func checkNetwork() {
+        
+        if Reachability.isConnectedToNetwork(){
+            print("Internet Connection Available!")
+            searchMovies()
+            
+        }else{
+            print("Internet Connection not Available!")
+            
+        }
     
+    }
     
 
     
     @IBAction func searchBtn(_ sender: Any) {
-        searchMovies()
         
+        //Check Network and Search Movies
+        checkNetwork()
     }
     
     

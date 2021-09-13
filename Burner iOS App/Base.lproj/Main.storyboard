@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Burner_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylc-xx-ghi">
+                                <rect key="frame" x="26.5" y="143" width="320" height="76"/>
+                                <string key="text">Find Movies, shows
+and more…</string>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-bar" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-qW-mRd">
+                                <rect key="frame" x="31" y="265.5" width="352" height="58"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uEp-DX-hbD">
+                                <rect key="frame" x="76.5" y="277.5" width="294" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAT-MN-hLC">
+                                <rect key="frame" x="43" y="380" width="328" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="SEARCH" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMBb" translatesAutoresizingMaskIntoConstraints="NO" id="qt7-VK-iY0">
+                                <rect key="frame" x="87" y="706" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qt7-VK-iY0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57971" id="0iv-6A-ngv"/>
+                            <constraint firstItem="ylc-xx-ghi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.772947" id="2im-Jp-Nkm"/>
+                            <constraint firstItem="RAT-MN-hLC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0613839" id="DdE-hM-K29"/>
+                            <constraint firstItem="qt7-VK-iY0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.142857" id="I1f-J5-ZEW"/>
+                            <constraint firstItem="qt7-VK-iY0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.7" id="KLJ-eB-voR"/>
+                            <constraint firstItem="jnE-qW-mRd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0647321" id="LaF-s3-HGh"/>
+                            <constraint firstItem="jnE-qW-mRd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.850242" id="NZV-ir-Gu5"/>
+                            <constraint firstItem="jnE-qW-mRd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UTb-s6-Dc8"/>
+                            <constraint firstItem="ylc-xx-ghi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.9" id="W3E-l8-bvC"/>
+                            <constraint firstItem="qt7-VK-iY0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a75-Ze-SuC"/>
+                            <constraint firstItem="uEp-DX-hbD" firstAttribute="leading" secondItem="jnE-qW-mRd" secondAttribute="trailing" multiplier="0.2" id="bdA-g7-QcC"/>
+                            <constraint firstItem="uEp-DX-hbD" firstAttribute="centerY" secondItem="jnE-qW-mRd" secondAttribute="centerY" id="eVv-gz-xLe"/>
+                            <constraint firstItem="uEp-DX-hbD" firstAttribute="height" secondItem="jnE-qW-mRd" secondAttribute="height" multiplier="0.586207" id="gUX-ik-7QD"/>
+                            <constraint firstItem="RAT-MN-hLC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.792271" id="ge0-jb-hV1"/>
+                            <constraint firstItem="RAT-MN-hLC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="glq-Tq-K4W"/>
+                            <constraint firstItem="ylc-xx-ghi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.4" id="hNt-g7-LPT"/>
+                            <constraint firstItem="ylc-xx-ghi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0848214" id="iFN-GD-8so"/>
+                            <constraint firstItem="jnE-qW-mRd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.65" id="nxq-7l-jIP"/>
+                            <constraint firstItem="RAT-MN-hLC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.9" id="p82-Sw-pfs"/>
+                            <constraint firstItem="uEp-DX-hbD" firstAttribute="width" secondItem="jnE-qW-mRd" secondAttribute="width" multiplier="0.835227" id="sAN-iq-Zj4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OMBb" width="1062" height="468"/>
+        <image name="button" width="1968" height="330"/>
+        <image name="search-bar" width="1968" height="312"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

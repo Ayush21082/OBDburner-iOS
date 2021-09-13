@@ -55,7 +55,10 @@ class ViewController: UIViewController {
                                 moviesPoster.append(auxPoster as! String)
                                 moviesYear.append(auxYear as! String)
                             }
-    
+                            DispatchQueue.main.async {
+                                self.performSegue(withIdentifier: "movieListing", sender: nil)
+                            }
+                           
                         }
             
                     }
@@ -70,9 +73,12 @@ class ViewController: UIViewController {
         task.resume()
         
     }
+    
+
+    
     @IBAction func searchBtn(_ sender: Any) {
         searchMovies()
-        print("Button Tappped")
+        
     }
     
 }

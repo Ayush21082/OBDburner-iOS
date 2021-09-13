@@ -22,6 +22,15 @@ class MovieListingViewController: UIViewController {
 
    
     }
+    //Data Passing
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "movieDetail") {
+            let view = segue.destination as! MovieDataViewController
+            movie = movies?[tableView.indexPathForSelectedRow!.row]
+            view.segueData = movie?.name
+            view.delegateMovieDetails = self
+        }
+    }
 
 
 }
@@ -67,7 +76,7 @@ extension MovieListingViewController: UITableViewDataSource, UITableViewDelegate
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "segueMoveDetails", sender: self)
+        performSegue(withIdentifier: "movieDetail", sender: self)
     }
     
 }

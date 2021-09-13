@@ -19,6 +19,7 @@
 		7D00CEA126EFC0440073EB0F /* MovieListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00CEA026EFC0440073EB0F /* MovieListingViewController.swift */; };
 		7D00CEA326EFC10D0073EB0F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00CEA226EFC10D0073EB0F /* TableViewCell.swift */; };
 		7D00CEA526EFC5830073EB0F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00CEA426EFC5830073EB0F /* Reachability.swift */; };
+		7D00CEA726EFCD0D0073EB0F /* MovieDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00CEA626EFCD0D0073EB0F /* MovieDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7D00CEA026EFC0440073EB0F /* MovieListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListingViewController.swift; sourceTree = "<group>"; };
 		7D00CEA226EFC10D0073EB0F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7D00CEA426EFC5830073EB0F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		7D00CEA626EFCD0D0073EB0F /* MovieDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				7D00CEA426EFC5830073EB0F /* Reachability.swift */,
 				7D00CE9C26EFBBCE0073EB0F /* Movie.swift */,
 				7D00CE8126EF880C0073EB0F /* Main.storyboard */,
+				7D00CEA626EFCD0D0073EB0F /* MovieDataViewController.swift */,
 				7D00CEA026EFC0440073EB0F /* MovieListingViewController.swift */,
 				7D00CEA226EFC10D0073EB0F /* TableViewCell.swift */,
 				7D00CE8726EF88100073EB0F /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 				7D00CE8026EF880C0073EB0F /* ViewController.swift in Sources */,
 				7D00CEA326EFC10D0073EB0F /* TableViewCell.swift in Sources */,
 				7D00CE7C26EF880C0073EB0F /* AppDelegate.swift in Sources */,
+				7D00CEA726EFCD0D0073EB0F /* MovieDataViewController.swift in Sources */,
 				7D00CE7E26EF880C0073EB0F /* SceneDelegate.swift in Sources */,
 				7D00CEA126EFC0440073EB0F /* MovieListingViewController.swift in Sources */,
 				7D00CEA526EFC5830073EB0F /* Reachability.swift in Sources */,

@@ -43,6 +43,11 @@ class MovieDataViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        movieDetailsImageView.layer.masksToBounds = true
+        movieDetailsImageView.layer.cornerRadius = 15
+    }
     
     public func loadMovieDetails() {
         let movieName = segueData.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)

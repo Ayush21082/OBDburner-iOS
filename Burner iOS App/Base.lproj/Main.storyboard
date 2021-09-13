@@ -113,14 +113,14 @@ and more…</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Movie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyJ-Hs-fuA">
-                                                    <rect key="frame" x="145" y="23.5" width="207" height="30.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Movie" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="SyJ-Hs-fuA">
+                                                    <rect key="frame" x="134.5" y="15.5" width="228" height="77.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQZ-a4-Xfd">
-                                                    <rect key="frame" x="149.5" y="71" width="115" height="28.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Movie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQZ-a4-Xfd">
+                                                    <rect key="frame" x="149.5" y="102" width="115" height="28.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -128,34 +128,34 @@ and more…</string>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XVw-bq-qBl">
                                                     <rect key="frame" x="20.5" y="13.5" width="83" height="128"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPl-vg-9PT">
-                                                    <rect key="frame" x="283.5" y="64" width="95" height="27"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPl-vg-9PT">
+                                                    <rect key="frame" x="134.5" y="103" width="207" height="26.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                                    <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lPl-vg-9PT" firstAttribute="centerY" secondItem="cUF-xW-6Q6" secondAttribute="centerY" id="4w6-0c-uuM"/>
+                                                <constraint firstItem="lPl-vg-9PT" firstAttribute="centerY" secondItem="cUF-xW-6Q6" secondAttribute="centerY" multiplier="1.5" id="4w6-0c-uuM"/>
                                                 <constraint firstAttribute="trailing" secondItem="Irk-AH-2Yl" secondAttribute="trailing" id="6VK-HH-Vsw"/>
                                                 <constraint firstItem="SyJ-Hs-fuA" firstAttribute="centerX" secondItem="cUF-xW-6Q6" secondAttribute="centerX" multiplier="1.2" id="9e2-Lq-zsa"/>
                                                 <constraint firstItem="kQZ-a4-Xfd" firstAttribute="width" secondItem="cUF-xW-6Q6" secondAttribute="width" multiplier="0.277778" id="GIl-Zr-ETY"/>
-                                                <constraint firstItem="lPl-vg-9PT" firstAttribute="centerX" secondItem="cUF-xW-6Q6" secondAttribute="centerX" multiplier="1.6" id="JFI-xT-0rP"/>
+                                                <constraint firstItem="lPl-vg-9PT" firstAttribute="centerX" secondItem="cUF-xW-6Q6" secondAttribute="centerX" multiplier="1.15" id="JFI-xT-0rP"/>
                                                 <constraint firstAttribute="bottom" secondItem="Irk-AH-2Yl" secondAttribute="bottom" id="Jpd-hv-Epz"/>
                                                 <constraint firstItem="kQZ-a4-Xfd" firstAttribute="centerX" secondItem="cUF-xW-6Q6" secondAttribute="centerX" id="L7W-pi-AH7"/>
-                                                <constraint firstItem="SyJ-Hs-fuA" firstAttribute="centerY" secondItem="cUF-xW-6Q6" secondAttribute="centerY" multiplier="0.5" id="Opf-Aj-d8o"/>
+                                                <constraint firstItem="SyJ-Hs-fuA" firstAttribute="centerY" secondItem="cUF-xW-6Q6" secondAttribute="centerY" multiplier="0.7" id="Opf-Aj-d8o"/>
                                                 <constraint firstItem="Irk-AH-2Yl" firstAttribute="top" secondItem="cUF-xW-6Q6" secondAttribute="top" id="TDu-Kn-L7B"/>
-                                                <constraint firstItem="SyJ-Hs-fuA" firstAttribute="height" secondItem="cUF-xW-6Q6" secondAttribute="height" multiplier="0.198347" id="W48-H5-SnE"/>
-                                                <constraint firstItem="lPl-vg-9PT" firstAttribute="width" secondItem="cUF-xW-6Q6" secondAttribute="width" multiplier="0.229469" id="aTa-kc-h9k"/>
+                                                <constraint firstItem="SyJ-Hs-fuA" firstAttribute="height" secondItem="cUF-xW-6Q6" secondAttribute="height" multiplier="0.5" id="W48-H5-SnE"/>
+                                                <constraint firstItem="lPl-vg-9PT" firstAttribute="width" secondItem="cUF-xW-6Q6" secondAttribute="width" multiplier="0.5" id="aTa-kc-h9k"/>
                                                 <constraint firstItem="XVw-bq-qBl" firstAttribute="centerX" secondItem="cUF-xW-6Q6" secondAttribute="centerX" multiplier="0.3" id="dVV-ZN-pzc"/>
                                                 <constraint firstItem="Irk-AH-2Yl" firstAttribute="leading" secondItem="cUF-xW-6Q6" secondAttribute="leading" id="eDh-5i-b6G"/>
                                                 <constraint firstItem="kQZ-a4-Xfd" firstAttribute="height" secondItem="cUF-xW-6Q6" secondAttribute="height" multiplier="0.181818" id="iQg-P7-CNT"/>
-                                                <constraint firstItem="SyJ-Hs-fuA" firstAttribute="width" secondItem="cUF-xW-6Q6" secondAttribute="width" multiplier="0.5" id="idq-ey-Zes"/>
+                                                <constraint firstItem="SyJ-Hs-fuA" firstAttribute="width" secondItem="cUF-xW-6Q6" secondAttribute="width" multiplier="0.55" id="idq-ey-Zes"/>
                                                 <constraint firstItem="XVw-bq-qBl" firstAttribute="width" secondItem="cUF-xW-6Q6" secondAttribute="width" multiplier="0.2" id="lif-00-B8A"/>
                                                 <constraint firstItem="lPl-vg-9PT" firstAttribute="height" secondItem="cUF-xW-6Q6" secondAttribute="height" multiplier="0.173554" id="wgO-Vq-vP7"/>
                                                 <constraint firstItem="XVw-bq-qBl" firstAttribute="height" secondItem="cUF-xW-6Q6" secondAttribute="height" multiplier="0.826446" id="yVe-PN-H9f"/>
                                                 <constraint firstItem="XVw-bq-qBl" firstAttribute="centerY" secondItem="cUF-xW-6Q6" secondAttribute="centerY" id="z1C-Vm-ct1"/>
-                                                <constraint firstItem="kQZ-a4-Xfd" firstAttribute="centerY" secondItem="cUF-xW-6Q6" secondAttribute="centerY" multiplier="1.1" id="zS3-je-42K"/>
+                                                <constraint firstItem="kQZ-a4-Xfd" firstAttribute="centerY" secondItem="cUF-xW-6Q6" secondAttribute="centerY" multiplier="1.5" id="zS3-je-42K"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -208,6 +208,7 @@ and more…</string>
                     </view>
                     <navigationItem key="navigationItem" id="9IF-4O-BmR"/>
                     <connections>
+                        <outlet property="queryLbl" destination="r2y-Ln-fDx" id="mqp-gR-zsb"/>
                         <outlet property="tableView" destination="aU5-88-3hr" id="5sK-7Z-xgz"/>
                         <segue destination="Z37-Qx-8Y2" kind="show" identifier="movieDetail" id="XdE-cq-kaU"/>
                     </connections>
@@ -261,8 +262,8 @@ and more…</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="juE-ui-y5p">
-                                <rect key="frame" x="238" y="359" width="166" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="juE-ui-y5p">
+                                <rect key="frame" x="238" y="354.5" width="166" height="59"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -344,7 +345,7 @@ and more…</string>
                             <constraint firstItem="mmP-5l-Er8" firstAttribute="width" secondItem="MOy-KF-kVU" secondAttribute="width" multiplier="0.400966" id="LE6-6N-PsP"/>
                             <constraint firstItem="rqu-fO-vHK" firstAttribute="height" secondItem="MOy-KF-kVU" secondAttribute="height" multiplier="0.0296912" id="MKG-2m-XD3"/>
                             <constraint firstItem="rqu-fO-vHK" firstAttribute="width" secondItem="MOy-KF-kVU" secondAttribute="width" multiplier="0.125604" id="NIW-yz-SZm"/>
-                            <constraint firstItem="juE-ui-y5p" firstAttribute="height" secondItem="MOy-KF-kVU" secondAttribute="height" multiplier="0.0296912" id="NRG-xL-OPG"/>
+                            <constraint firstItem="juE-ui-y5p" firstAttribute="height" secondItem="MOy-KF-kVU" secondAttribute="height" multiplier="0.07" id="NRG-xL-OPG"/>
                             <constraint firstItem="Bp8-Xv-xcC" firstAttribute="height" secondItem="MOy-KF-kVU" secondAttribute="height" multiplier="0.0296912" id="OEf-uJ-pEe"/>
                             <constraint firstItem="iYI-C9-PVg" firstAttribute="height" secondItem="MOy-KF-kVU" secondAttribute="height" multiplier="0.14" id="Oel-gI-55y"/>
                             <constraint firstItem="G3q-I4-YIm" firstAttribute="height" secondItem="MOy-KF-kVU" secondAttribute="height" multiplier="0.0296912" id="P07-h2-Mmx"/>
@@ -361,7 +362,7 @@ and more…</string>
                             <constraint firstItem="DnL-4P-Cb8" firstAttribute="centerY" secondItem="4H3-os-uPQ" secondAttribute="centerY" multiplier="0.57" id="agc-5h-5JN"/>
                             <constraint firstItem="Bp8-Xv-xcC" firstAttribute="centerX" secondItem="4H3-os-uPQ" secondAttribute="centerX" multiplier="1.55" id="bQN-la-gcO"/>
                             <constraint firstItem="mmP-5l-Er8" firstAttribute="centerY" secondItem="4H3-os-uPQ" secondAttribute="centerY" multiplier="0.85" id="c5Q-N9-vd5"/>
-                            <constraint firstItem="juE-ui-y5p" firstAttribute="centerY" secondItem="4H3-os-uPQ" secondAttribute="centerY" multiplier="0.92" id="csO-Px-Rph"/>
+                            <constraint firstItem="juE-ui-y5p" firstAttribute="centerY" secondItem="4H3-os-uPQ" secondAttribute="centerY" multiplier="0.95" id="csO-Px-Rph"/>
                             <constraint firstItem="jqr-HD-UeY" firstAttribute="width" secondItem="MOy-KF-kVU" secondAttribute="width" multiplier="0.86715" id="dAC-XK-jru"/>
                             <constraint firstItem="mmP-5l-Er8" firstAttribute="centerX" secondItem="4H3-os-uPQ" secondAttribute="centerX" multiplier="1.55" id="dK9-u4-waK"/>
                             <constraint firstItem="z0f-82-Rg7" firstAttribute="centerY" secondItem="4H3-os-uPQ" secondAttribute="centerY" multiplier="1.05" id="dUo-sv-8K9"/>

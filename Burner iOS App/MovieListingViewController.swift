@@ -10,10 +10,11 @@ import UIKit
 class MovieListingViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var queryLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        queryLbl.text = "Search result of “\(searchData)”"
         tableView.delegate = self
         tableView.dataSource = self
     }

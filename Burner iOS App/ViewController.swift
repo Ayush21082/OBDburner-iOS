@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.stopActivityIndicator()
+        movies?.removeAll()
     }
     
     func searchMovies() {

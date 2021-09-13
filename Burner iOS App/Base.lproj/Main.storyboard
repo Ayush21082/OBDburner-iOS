@@ -79,6 +79,7 @@ and more…</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="C6u-r6-i5A" id="lVu-dR-a8w"/>
                         <outlet property="searchBox" destination="uEp-DX-hbD" id="jEh-nT-7SN"/>
                         <segue destination="sSP-h1-EsR" kind="presentation" identifier="movieListing" modalPresentationStyle="fullScreen" id="BOY-Ej-9nm"/>
                     </connections>

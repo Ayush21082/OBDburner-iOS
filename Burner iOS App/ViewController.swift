@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.stopActivityIndicator()
     }
     
     func searchMovies() {
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
                             }
                             DispatchQueue.main.async {
                                 self.performSegue(withIdentifier: "movieListing", sender: nil)
-                                self.stopActivityIndicator()
+                                
                             }
                            
                         }
@@ -94,6 +94,12 @@ class ViewController: UIViewController {
             
         }else{
             print("Internet Connection not Available!")
+            let alert = UIAlertController(title: "Network Issue", message: "Internet Connection not Available!", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            
+
+            self.present(alert, animated: true)
             
         }
     
@@ -105,6 +111,7 @@ class ViewController: UIViewController {
         
         //Check Network and Search Movies
         checkNetwork()
+        
     }
     
     

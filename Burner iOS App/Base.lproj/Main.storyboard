@@ -38,6 +38,9 @@ and more…</string>
                                 <state key="normal" title="SEARCH" backgroundImage="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bnt-gn-5ms"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMBb" translatesAutoresizingMaskIntoConstraints="NO" id="qt7-VK-iY0">
                                 <rect key="frame" x="87" y="706" width="240" height="128"/>
@@ -68,6 +71,9 @@ and more…</string>
                             <constraint firstItem="uEp-DX-hbD" firstAttribute="width" secondItem="jnE-qW-mRd" secondAttribute="width" multiplier="0.835227" id="sAN-iq-Zj4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBox" destination="uEp-DX-hbD" id="jEh-nT-7SN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

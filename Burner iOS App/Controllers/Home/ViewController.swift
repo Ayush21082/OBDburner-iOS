@@ -114,11 +114,14 @@ class ViewController: UIViewController {
         }else{
             self.showToast(message: "Please enter some value", font: .systemFont(ofSize: 12.0))
         }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
             if movies?.count == 0 {
                 print("Not Found")
-                self.stopActivityIndicator()
-                self.showToast(message: "Result Not Found", font: .systemFont(ofSize: 12.0))
+                self.showToast(message: "Fetching Data", font: .systemFont(ofSize: 12.0))
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+                    self.stopActivityIndicator()
+                    self.showToast(message: "Result Not Found", font: .systemFont(ofSize: 12.0))
+                }
             }else{
                 self.checkNetwork()
             }

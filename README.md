@@ -3,7 +3,13 @@
 
  
 ## Introduction ##
-OBDburner is free and Open Source Application developed using Swift 4
+OBDburner is free and Open Source Application developed using Swift 4. 
+<p>
+iOS App using OMDB API
+
+### OMDB API  ###
+The <a href="http://www.omdbapi.com">OMDb API </a>is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users. 
+
  <p>
 <img alt="iOS" src="https://img.shields.io/badge/platform-iOS-blue">
  <img alt="Swift" src="https://img.shields.io/badge/Swift-4.0-brightgreen">
@@ -19,9 +25,9 @@ OBDburner is free and Open Source Application developed using Swift 4
 
 ## Screenshots
  <p>
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/1.png" width="300"> 
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/2.png" width="300"> 
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/3.png" width="300"> 
+<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/1.png" width="200"> 
+<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/2.png" width="200"> 
+<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/3.png" width="200"> 
 </p>
 
 

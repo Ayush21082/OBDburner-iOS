@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.stopActivityIndicator()
         movies?.removeAll()
+        self.hideKeyboardWhenTappedAround()
     }
     
     func searchMovies() {
@@ -150,6 +151,16 @@ extension UIViewController {
         }, completion: {(isCompleted) in
             toastLabel.removeFromSuperview()
         })
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 

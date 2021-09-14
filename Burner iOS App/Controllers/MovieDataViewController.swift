@@ -20,6 +20,8 @@ class MovieDataViewController: UIViewController {
     var countryMovieDetails:String!
     var directorMovieDetails:String!
     var actorsMovieDetails:String!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var delegateMovieDetails : MovieListingViewController?
     
@@ -35,6 +37,7 @@ class MovieDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         loadMovieDetails()
     }
@@ -50,6 +53,8 @@ class MovieDataViewController: UIViewController {
     }
     
     public func loadMovieDetails() {
+        loadingView.alpha = 1
+        showActivityIndicator()
         let movieName = segueData.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
         
         let urlApi = "http://www.omdbapi.com/?i=\(imdbID)&apikey=\(key)&t="+movieName
@@ -119,6 +124,8 @@ class MovieDataViewController: UIViewController {
                             self.countryTextView.text = self.countryMovieDetails
                             self.directorTextView.text = self.directorMovieDetails
                             self.actorsTextView.text = self.actorsMovieDetails
+                            self.loadingView.alpha = 0
+                            self.stopActivityIndicator()
                         }
 
                     }
@@ -131,6 +138,15 @@ class MovieDataViewController: UIViewController {
         }
         task.resume()
 
+    }
+    func showActivityIndicator() {
+        activityIndicator.alpha = 1
+        activityIndicator.startAnimating()
+        
+    }
+    func stopActivityIndicator() {
+        activityIndicator.alpha = 0
+        activityIndicator.stopAnimating()
     }
     
 

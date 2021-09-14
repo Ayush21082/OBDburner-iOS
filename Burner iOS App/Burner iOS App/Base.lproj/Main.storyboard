@@ -47,7 +47,7 @@ and more…</string>
                                 <rect key="frame" x="87" y="706" width="240" height="128"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="C6u-r6-i5A">
-                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                                <rect key="frame" x="197" y="533.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -55,7 +55,7 @@ and more…</string>
                         <constraints>
                             <constraint firstItem="qt7-VK-iY0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57971" id="0iv-6A-ngv"/>
                             <constraint firstItem="ylc-xx-ghi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.772947" id="2im-Jp-Nkm"/>
-                            <constraint firstItem="C6u-r6-i5A" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="AXc-h6-z39"/>
+                            <constraint firstItem="C6u-r6-i5A" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.2" id="AXc-h6-z39"/>
                             <constraint firstItem="C6u-r6-i5A" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0223214" id="B0M-sa-VGh"/>
                             <constraint firstItem="RAT-MN-hLC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0613839" id="DdE-hM-K29"/>
                             <constraint firstItem="qt7-VK-iY0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.142857" id="I1f-J5-ZEW"/>

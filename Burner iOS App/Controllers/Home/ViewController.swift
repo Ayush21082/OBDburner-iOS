@@ -82,6 +82,7 @@ class ViewController: UIViewController {
     func showActivityIndicator() {
         activityIndicator.alpha = 1
         activityIndicator.startAnimating()
+        
     }
     func stopActivityIndicator() {
         activityIndicator.alpha = 0
@@ -95,15 +96,27 @@ class ViewController: UIViewController {
             
         }else{
             print("Internet Connection not Available!")
-            let alert = UIAlertController(title: "Network Issue", message: "Internet Connection not Available!", preferredStyle: .alert)
-
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            
-
-            self.present(alert, animated: true)
+            self.showToast(message: "Internet Connection not Available!", font: .systemFont(ofSize: 12.0))
             
         }
     
+    }
+    
+    func checkErrors() {
+        if !searchBox.text!.trimmingCharacters(in: .whitespaces).isEmpty {
+            checkNetwork()
+        }else{
+            self.showToast(message: "Please enter some value", font: .systemFont(ofSize: 12.0))
+        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+            if movies?.count == 0 {
+                print("Not Found")
+                self.stopActivityIndicator()
+                self.showToast(message: "Result Not Found", font: .systemFont(ofSize: 12.0))
+            }else{
+                self.checkNetwork()
+            }
+        }
     }
     
 
@@ -111,10 +124,32 @@ class ViewController: UIViewController {
     @IBAction func searchBtn(_ sender: Any) {
         
         //Check Network and Search Movies
-        checkNetwork()
+        checkErrors()
         
     }
     
     
+}
+
+extension UIViewController {
+    
+    func showToast(message : String, font: UIFont) {
+        
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 120, y: self.view.frame.size.height-100, width: 250, height: 40))
+        toastLabel.backgroundColor = UIColor.red.withAlphaComponent(0.9)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
 }
 

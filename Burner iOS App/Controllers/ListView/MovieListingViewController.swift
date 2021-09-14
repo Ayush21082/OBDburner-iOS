@@ -32,6 +32,7 @@ class MovieListingViewController: UIViewController {
             view.delegateMovieDetails = self
         }
     }
+    
 
 
 }
@@ -79,7 +80,22 @@ extension MovieListingViewController: UITableViewDataSource, UITableViewDelegate
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "movieDetail", sender: self)
+        
+        if Reachability.isConnectedToNetwork(){
+            print("Internet Connection Available!")
+            performSegue(withIdentifier: "movieDetail", sender: self)
+            
+        }else{
+            print("Internet Connection not Available!")
+            let alert = UIAlertController(title: "Network Issue", message: "Internet Connection not Available!", preferredStyle: .alert)
+
+             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+
+             self.present(alert, animated: true)
+            
+        }
+        
     }
     
 }

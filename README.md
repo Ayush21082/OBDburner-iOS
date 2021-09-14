@@ -1,9 +1,9 @@
-# OBDburner iOS
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/logo/OMDburner.png" width="100">
+# OMDburner iOS
+<img src="https://github.com/Ayush21082/OMDburner-iOS/blob/main/Manual%20Assets/logo/OMDburner.png" width="100">
 
  
 ## Introduction ##
-OBDburner is free and Open Source Application developed using Swift 4. 
+OMDburner is free and Open Source Application developed using Swift 4. 
 <p>
 iOS App using OMDB API
 
@@ -25,13 +25,13 @@ The <a href="http://www.omdbapi.com">OMDb API </a>is a RESTful web service to ob
 
 ## Screenshots
  <p>
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/1.png" width="200"> 
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/2.png" width="200"> 
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Screenshots/3.png" width="200"> 
+<img src="https://github.com/Ayush21082/OMDburner-iOS/blob/main/Manual%20Assets/Screenshots/1.png" width="200"> 
+<img src="https://github.com/Ayush21082/OMDburner-iOS/blob/main/Manual%20Assets/Screenshots/2.png" width="200"> 
+<img src="https://github.com/Ayush21082/OMDburner-iOS/blob/main/Manual%20Assets/Screenshots/3.png" width="200"> 
 </p>
 
 ## Demo ##
-<img src="https://github.com/Ayush21082/OBDburner-iOS/blob/main/Manual%20Assets/Demo/demo.gif" width="200" height="400"> 
+<img src="https://github.com/Ayush21082/OMDburner-iOS/blob/main/Manual%20Assets/Demo/demo.gif" width="200" height="400"> 
 
  ## Author 👨‍💻 ##
  [Ayush Singh](https://github.com/ayush21082)

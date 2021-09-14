@@ -26,7 +26,11 @@ class ViewController: UIViewController {
     func searchMovies() {
         showActivityIndicator()
         searchData = searchBox.text!
-        let url = URL(string: "http://www.omdbapi.com/?i=\(imdbID)&apikey=\(key)&s=\(searchData)")
+        let value = String("http://www.omdbapi.com/?i=\(imdbID)&apikey=\(key)&s=\(searchData)")
+        let urlTrimmed:String = value.replacingOccurrences(of: " ", with: "%20")
+        let url = URL(string: urlTrimmed)
+
+        print(url!)
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
             if error != nil
             {
@@ -105,6 +109,7 @@ class ViewController: UIViewController {
     
     func checkErrors() {
         if !searchBox.text!.trimmingCharacters(in: .whitespaces).isEmpty {
+            print(searchBox.text!.trimmingCharacters(in: .whitespaces))
             checkNetwork()
         }else{
             self.showToast(message: "Please enter some value", font: .systemFont(ofSize: 12.0))

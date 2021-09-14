@@ -69,9 +69,11 @@ extension MovieListingViewController: UITableViewDataSource, UITableViewDelegate
             let imageUrl  = movies?[row].poster
             let url = URL(string: imageUrl!)
             let data = try? Data(contentsOf: url!)
-            if let imageData = data {
+            if  let imageData = data {
                 let image = UIImage(data: imageData)
                 cell.imageMovieText.image = image
+            }else{
+                cell.imageMovieText.image = UIImage(named: "image-nil")
             }
         
         return cell

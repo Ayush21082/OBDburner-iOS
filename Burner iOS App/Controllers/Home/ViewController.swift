@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     func searchMovies() {
         showActivityIndicator()
         searchData = searchBox.text!
-        let url = URL(string: "http://www.omdbapi.com/?i=\(api)&apikey=\(key)&s=\(searchData)")
+        let url = URL(string: "http://www.omdbapi.com/?i=\(imdbID)&apikey=\(key)&s=\(searchData)")
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
             if error != nil
             {

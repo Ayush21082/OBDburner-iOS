@@ -52,7 +52,7 @@ class MovieDataViewController: UIViewController {
     public func loadMovieDetails() {
         let movieName = segueData.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
         
-        let urlApi = "http://www.omdbapi.com/?i=\(api)&apikey=\(key)&t="+movieName
+        let urlApi = "http://www.omdbapi.com/?i=\(imdbID)&apikey=\(key)&t="+movieName
         print(urlApi)
         let url = URL(string: urlApi)
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -104,7 +104,13 @@ class MovieDataViewController: UIViewController {
                         let url = URL(string: imageUrl!)
                         let data = try? Data(contentsOf: url!)
                         DispatchQueue.main.async {
-                            self.movieDetailsImageView.image = UIImage(data: data!)
+                            if let imageData = data {
+                                let image = UIImage(data: imageData)
+                                self.movieDetailsImageView.image = image
+                            }else{
+                                self.movieDetailsImageView.image = UIImage(named: "image-nil")
+                            }
+                            
                             self.titleMovieDetailsTextView.text = self.nameMovieDetails
                             self.plotMovieDetailsTextView.text = self.plotMovieDetails
                             self.releasedTextView.text = self.releasedMovieDetails

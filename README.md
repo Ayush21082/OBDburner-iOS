@@ -1,5 +1,5 @@
 # OMDburner iOS
-<img src="https://github.com/Ayush21082/OMDburner-iOS/blob/main/Manual%20Assets/logo/OMDburner.png" width="100">
+<img src="https://github.com/Ayush21082/OMDburner-iOS/blob/main/Manual%20Assets/logo/OMDburner.png" width="120">
 
  
 ## Introduction ##
